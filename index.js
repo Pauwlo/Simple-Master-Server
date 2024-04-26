@@ -16,9 +16,11 @@ app.get('/', (req, res) => {
 
 app.get('/list', (req, res) => {
   res.send({
-		code: 0,
-		msg: 'OK',
-		servers: servers
+		result: {
+			code: 0,
+			msg: 'OK',
+			servers: servers
+		}
 	})
 })
 
